@@ -1,0 +1,27 @@
+.tab{
+    -fx-pref-width: 205px;
+    -fx-pref-height: 50px;
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: transparent;
+    /*#d6d6d6*/
+}
+
+.tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.tab-selected-line {
+    -fx-background-color: #928bff;
+
+}
+
+.jfx-rippler{
+    -jfx-rippler-fill: #bcbcbc;
+}
+
+.tab-label {
+    -fx-text-fill: #434343;
+    -fx-font-family: "Microsoft Yahei";
+}
+
+

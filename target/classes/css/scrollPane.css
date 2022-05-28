@@ -1,0 +1,12 @@
+#scroll_pane{
+    -fx-focus-color: rgba(69, 69, 69, 0);
+    -fx-faint-focus-color: rgba(110, 110, 110, 0);
+}
+
+#lyricsPane{
+    -fx-background-color: transparent;
+}
+
+#lyricsPane > .viewport {
+-fx-background-color: transparent;
+}

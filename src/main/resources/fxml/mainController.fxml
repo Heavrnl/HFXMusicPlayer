@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+
+    <center>
+        <AnchorPane>
+            <children>
+              <fx:include fx:id="mainView" source="mainViewController.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              <fx:include fx:id="album" source="albumController.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              <fx:include fx:id="display" layoutY="-680.0" source="displayController.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+              <fx:include fx:id="playList" layoutX="-260.0" source="playListController.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <fx:include fx:id="top" source="topController.fxml" />
+    </top>
+    <bottom>
+        <fx:include fx:id="bottom" source="bottomController.fxml" />
+    </bottom>
+
+</BorderPane>

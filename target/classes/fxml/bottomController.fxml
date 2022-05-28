@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="bg_pane" maxHeight="110.0" prefHeight="110.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BottomController">
+   <children>
+      <Region fx:id="region" prefHeight="110.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Region>
+      <ImageView fx:id="img" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutY="50.0" prefHeight="20.0" prefWidth="110.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <Line fx:id="vol_bgline" endX="100.0" fill="#868383" onMouseClicked="#bgLineSetVolume" stroke="#656565" strokeWidth="3.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Line>
+            <Line fx:id="vol_proline" onMouseClicked="#proLineSetVolume" stroke="WHITE" strokeWidth="3.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Line>
+            <Circle fx:id="vol_circle" fill="WHITE" radius="5.0" stroke="WHITE" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hb" alignment="CENTER" layoutX="350.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="110.0" prefWidth="362.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="350.0" spacing="20.0">
+                     <children>
+                        <JFXButton fx:id="b_random" minHeight="50.0" minWidth="50.0" onAction="#random" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/bottomPane.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="b_previous" minHeight="50.0" minWidth="50.0" onAction="#previous" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/bottomPane.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="b_playOrPause" minHeight="50.0" minWidth="50.0" onAction="#playOrPause" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/bottomPane.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="b_next" minHeight="50.0" minWidth="50.0" onAction="#next" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/bottomPane.css">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="b_cycle" minHeight="50.0" minWidth="50.0" onAction="#cycle" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/bottomPane.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="30.0" prefWidth="350.0">
+                     <children>
+                        <Line fx:id="bg_line" endX="400.0" fill="#868383" layoutY="14.0" onMouseClicked="#bgJumpTo" stroke="#656565" strokeWidth="3.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Line>
+                        <Line fx:id="progress_line" layoutY="14.0" onMouseClicked="#prolineJumpTo" stroke="WHITE" strokeWidth="3.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Line>
+                        <Circle fx:id="progress_circle" fill="WHITE" layoutY="14.0" radius="5.0" stroke="WHITE" strokeType="INSIDE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="musicText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="无标题" textAlignment="CENTER" wrappingWidth="400.240234375" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXButton fx:id="b_volcontrol" layoutX="1009.0" layoutY="30.0" onAction="#mute" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/bottomPane.css" AnchorPane.rightAnchor="151.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="right_time" layoutX="767.0" layoutY="61.0" stylesheets="@../css/bottomPane.css" text="00:00" />
+      <Label fx:id="left_time" layoutX="301.0" layoutY="62.0" stylesheets="@../css/bottomPane.css" text="00:00" />
+   </children>
+</AnchorPane>

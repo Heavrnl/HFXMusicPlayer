@@ -1,0 +1,27 @@
+.jfx-button{
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+}
+
+#close{
+    -fx-background-image: url('/img/12.png');
+}
+
+#maximize{
+    -fx-background-image: url('/img/32.png');
+}
+
+#minimize{
+    -fx-background-image: url('/img/56.png');
+}
+
+#btn_playlist{
+    -fx-background-size: 25px;
+    -fx-background-image: url('/img/playlist1.png');
+}
+
+#openFile{
+    -fx-background-size: 20px;
+    -fx-background-image: url('/img/openfile.png');
+}

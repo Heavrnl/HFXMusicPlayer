@@ -1,0 +1,5 @@
+.list-view{
+    -fx-font-size: 15px;
+    -fx-faint-focus-color:transparent;
+    -fx-focus-color: #d9d9d9;
+}

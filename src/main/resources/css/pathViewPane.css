@@ -1,0 +1,18 @@
+.jfx-button{
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+}
+
+#close{
+    -fx-background-color: #7c7c7c;
+    -fx-background-image: url('/img/12.png');
+}
+
+#close:hover{
+    -fx-background-color: #ff6767;
+}
+
+#add{
+    -fx-background-color: linear-gradient(to right, #55b3ff, #ad9aff);
+}

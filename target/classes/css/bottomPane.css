@@ -1,0 +1,48 @@
+.jfx-button{
+    -fx-border-radius: 45;
+    -fx-background-radius: 45;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+}
+
+
+#b_previous{
+    -fx-background-size: 30px;
+    -fx-background-image: url('/img/go-previous.png');
+}
+
+#b_playOrPause{
+
+    -fx-background-size: 50px;
+    -fx-background-image: url('/img/play.png');
+}
+
+
+#b_next{
+    -fx-background-size: 30px;
+    -fx-background-image: url('/img/go-end.png');
+}
+
+#b_random{
+    -fx-background-size: 25px;
+    -fx-background-image: url('/img/r.png');
+}
+
+#b_cycle{
+    -fx-background-size: 25px;
+    -fx-background-image: url('/img/play-cycle.png');
+}
+
+#b_volcontrol{
+    -fx-background-size: 30px;
+    -fx-background-image: url('/img/volume_open.png');
+}
+
+.jfx-button:hover{
+    -fx-background-color: rgba(0,0,0,0.2);
+}
+
+
+.label{
+    -fx-text-fill: white;
+}

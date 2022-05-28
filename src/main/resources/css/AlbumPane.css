@@ -1,0 +1,31 @@
+.jfx-button{
+
+    /*-fx-border-radius: 45;*/
+    /*-fx-background-radius: 45;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+}
+
+#exit{
+    -fx-background-size: 25px;
+    -fx-background-image: url('/img/back.png');
+}
+
+.list-view{
+    /*-fx-border-color: transparent;*/
+    -fx-font-size: 15px;
+    /*-fx-background-insets: 0 ;*/
+    -fx-faint-focus-color:transparent;
+    -fx-focus-color: #d9d9d9;
+    /*-fx-background-color: transparent;*/
+}
+
+#bg_pane{
+    -fx-background-color: #f5f5f5;
+}
+
+#playAll{
+    -fx-background-color: linear-gradient(to right, #55b3ff, #ad9aff);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}

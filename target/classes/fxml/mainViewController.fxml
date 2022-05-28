@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="bg_pane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <ScrollPane fx:id="scroll_pane" focusTraversable="false" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/scrollPane.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <JFXMasonryPane fx:id="jfxMasonryPane" focusTraversable="true" prefHeight="600.0" prefWidth="1200.0" />
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

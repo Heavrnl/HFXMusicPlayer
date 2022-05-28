@@ -1,0 +1,16 @@
+.label{
+
+    -fx-font-weight: bold;
+}
+
+#albumTitle{
+    -fx-font-size: 20;
+}
+
+#artist{
+    -fx-font-size: 15;
+}
+
+#musicCount{
+    -fx-font-size: 15;
+}

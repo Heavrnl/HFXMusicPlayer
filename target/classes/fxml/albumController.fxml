@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="bg_pane" minHeight="100.0" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../css/AlbumPane.css" visible="false" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumController">
+   <children>
+      <JFXButton fx:id="exit" alignment="TOP_LEFT" minHeight="50.0" minWidth="50.0" onAction="#exit" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/AlbumPane.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXListView fx:id="songListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="357.0" stylesheets="@../css/AlbumPane.css" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="50.0" />
+      <AnchorPane fx:id="vbox_bgpane" layoutX="63.0" prefHeight="600.0" prefWidth="537.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="510.0" spacing="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="27.0">
+               <children>
+                  <Label fx:id="albumTitle" stylesheets="@../css/dispane-text.css" text="专辑名称">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="artist" stylesheets="@../css/dispane-text.css" text="艺术家" />
+                  <Label fx:id="musicCount" stylesheets="@../css/dispane-text.css" text="歌曲总数" />
+                  <Label fx:id="albumCover" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" />
+                  <JFXButton fx:id="playAll" onAction="#playListAll" prefHeight="46.0" prefWidth="144.0" text="播放" translateY="10.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
